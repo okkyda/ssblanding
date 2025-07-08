@@ -1,23 +1,30 @@
 // Hamburger & Responsive Menu
 const navbarMenu = document.getElementById('navbarMenu');
-
-hamburgerBtn.addEventListener('click', () => {
-  navbarMenu.classList.toggle('show');
-});
-
-// Optional: close menu if click outside (mobile)
-window.addEventListener('click', (e) => {
-  if (!navbarMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
-    navbarMenu.classList.remove('show');
-  }
-});
-
-// --- Sidebar --- //
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
 const sidebarMenu = document.getElementById('sidebarMenu');
 const sidebarClose = document.getElementById('sidebarClose');
 
+// Navbar menu (untuk mobile)
+if (hamburgerBtn && navbarMenu) {
+    hamburgerBtn.addEventListener('click', (e) => {
+        // Jika sidebar visible, jangan toggle navbarMenu
+        if (window.innerWidth <= 900) {
+            e.stopPropagation();
+            openSidebar();
+        } else {
+            navbarMenu.classList.toggle('show');
+        }
+    });
+    // Optional: close menu if click outside (mobile)
+    window.addEventListener('click', (e) => {
+        if (!navbarMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+            navbarMenu.classList.remove('show');
+        }
+    });
+}
+
+// --- Sidebar --- //
 function openSidebar() {
     sidebarOverlay.classList.add('active');
     sidebarMenu.classList.add('active');
@@ -29,12 +36,8 @@ function closeSidebar() {
     document.body.style.overflow = '';
 }
 
-hamburgerBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    openSidebar();
-});
-sidebarClose.addEventListener('click', closeSidebar);
-sidebarOverlay.addEventListener('click', closeSidebar);
+if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 
 window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeSidebar();
@@ -57,5 +60,4 @@ document.querySelectorAll('.sidebar-dropdown').forEach(btn => {
 });
 
 // Prevent menu close on sidebar click
-sidebarMenu.addEventListener('click', e => e.stopPropagation());
-
+if (sidebarMenu) sidebarMenu.addEventListener('click', e => e.stopPropagation());
