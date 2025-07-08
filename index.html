@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Slerate Sales Boost</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.jpeg" width="60" height="60" alt="Logo">
+            Slerate Sales Boost
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+            <div class="dropdown">
+                <span class="dropbtn">Services</span>
+                <div class="dropdown-content">
+                    <a href="#">Email Automation</a>
+                    <a href="#">Analytics</a>
+                    <a href="#">Personalisation</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropbtn">Integrations</span>
+                <div class="dropdown-content">
+                    <a href="#">Shopify</a>
+                    <a href="#">WooCommerce</a>
+                    <a href="#">Zapier</a>
+                </div>
+            </div>
+            <a href="#">Pricing</a>
+            <a href="#" class="login-btn">Log In</a>
+        </div>
+        <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar-menu" id="sidebarMenu" aria-label="Sidebar menu" tabindex="-1">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">&times;</button>
+        <nav class="sidebar-nav">
+            <button class="sidebar-link sidebar-dropdown" data-dropdown="services">
+                Solutions and Services <span class="arrow">&#8250;</span>
+            </button>
+            <div class="sidebar-dropdown-content" id="dropdown-services">
+                <a href="#">Email Automation</a>
+                <a href="#">Analytics</a>
+                <a href="#">Personalisation</a>
+            </div>
+            <button class="sidebar-link sidebar-dropdown" data-dropdown="integrations">
+                Integrations <span class="arrow">&#8250;</span>
+            </button>
+            <div class="sidebar-dropdown-content" id="dropdown-integrations">
+                <a href="#">Shopify</a>
+                <a href="#">WooCommerce</a>
+                <a href="#">Zapier</a>
+            </div>
+            <button class="sidebar-link sidebar-dropdown" data-dropdown="resources">
+                Resources <span class="arrow">&#8250;</span>
+            </button>
+            <div class="sidebar-dropdown-content" id="dropdown-resources">
+                <a href="#">Documentation</a>
+                <a href="#">Blog</a>
+                <a href="#">Guides</a>
+            </div>
+            <a class="sidebar-link" href="#">Switch to Slerate</a>
+            <a class="sidebar-link" href="#">Pricing</a>
+            <div class="sidebar-sep"></div>
+            <!-- Search, Language, Contact -->
+            <div class="sidebar-actions">
+                <div class="sidebar-search">
+                    <input type="text" placeholder="Search..." aria-label="Search menu" />
+                    <span class="icon">&#128269;</span>
+                </div>
+                <div class="sidebar-lang">
+                    <span class="icon">&#127760;</span>
+                    <select>
+                        <option>English</option>
+                        <option>Indonesia</option>
+                    </select>
+                </div>
+                <div class="sidebar-contact">
+                    <span class="icon">&#128222;</span>
+                    <a href="tel:+123456789">Contact Sales: +1 234 567 89</a>
+                </div>
+            </div>
+            <button class="sidebar-btn login">Log In</button>
+            <button class="sidebar-btn signup">Sign Up</button>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-footer-logos">
+                <img src="logo.jpeg" alt="Logo" style="height:32px;margin-right:8px;">
+                <img src="file-5z5rPpw5GTyYLruTTykw1n" alt="Brand" style="height:28px;">
+            </div>
+            <div class="sidebar-footer-socials">
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                        height="20" alt="fb"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" height="20"
+                        alt="x"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                        height="20" alt="ig"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        height="20" alt="in"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                        height="20" alt="yt"></a>
+            </div>
+            <div class="sidebar-footer-note">&copy; 2025 Slerate Sales Boost</div>
+        </div>
+    </aside>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-title">
+                Grow <span>faster</span> and work smarter
+            </div>
+            <div class="hero-desc">
+                Slerate Sales Boost is your all-in-one tool to automate, personalize, and analyze sales for rapid
+                growth.<br>
+                Start closing more deals effortlessly!
+            </div>
+            <div class="hero-cta">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-outline">Explore Product</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=700&q=80" alt="Dashboard">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-title">Powerful Features to Skyrocket Your Sales</div>
+        <div class="features-cards">
+            <div class="feature-card">
+                <img class="feature-icon" src="https://cdn-icons-png.flaticon.com/512/1010/1010640.png"
+                    alt="Email Automation">
+                <div class="feature-title">Convert with Email Automation</div>
+                <div class="feature-desc">Automate your sales emails and follow-up like a pro. Send the right message at
+                    the right time, every time.</div>
+                <button class="feature-btn">View Detail</button>
+            </div>
+            <div class="feature-card">
+                <img class="feature-icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+                    alt="Personalisation">
+                <div class="feature-title">Personalisation With Customer</div>
+                <div class="feature-desc">Personalize every message to boost engagement and conversions. Make every
+                    customer feel special.</div>
+                <button class="feature-btn">View Detail</button>
+            </div>
+            <div class="feature-card">
+                <img class="feature-icon" src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png" alt="Analytics">
+                <div class="feature-title">Real Time Chart Analytics</div>
+                <div class="feature-desc">Visualize your sales performance with live charts and analytics for
+                    data-driven decision making.</div>
+                <button class="feature-btn">View Detail</button>
+            </div>
+            <div class="feature-card">
+                <img class="feature-icon" src="https://cdn-icons-png.flaticon.com/512/545/545682.png"
+                    alt="Integrations">
+                <div class="feature-title">Integration with Many Platform</div>
+                <div class="feature-desc">Connect Slerate with your favorite platforms easily, no code required.</div>
+                <button class="feature-btn">View Detail</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Pamer Pencapaian -->
+    <section class="achievement-section">
+        <div class="achievement-container">
+            <div class="achievement-left">
+                <h2>Discover why businesses trust us</h2>
+                <p class="achievement-desc">
+                    The leading sales automation platform trusted by global businesses. We help you connect better,
+                    close more, and grow smarter.
+                </p>
+            </div>
+            <div class="achievement-metrics">
+                <div>
+                    <div class="metric-title">Up to <span>27x ROI</span></div>
+                    <div class="metric-desc">Average ROI seen by Slerate users</div>
+                </div>
+                <div>
+                    <div class="metric-title"><span>15+ years</span></div>
+                    <div class="metric-desc">of empowering businesses</div>
+                </div>
+                <div>
+                    <div class="metric-title"><span>14M+ Users</span></div>
+                    <div class="metric-desc">using Slerate worldwide</div>
+                </div>
+                <div>
+                    <div class="metric-title"><span>98%</span> accuracy</div>
+                    <div class="metric-desc">targeted customer segmentation</div>
+                </div>
+            </div>
+        </div>
+        <div class="achievement-cta-wrap">
+            <button class="achievement-cta">See All Our Customers</button>
+        </div>
+    </section>
+
+    <!-- Section 4: Penawaran/Plans -->
+    <section class="plans-section">
+        <div class="plans-content">
+            <div class="plans-text">
+                <h2>Try Slerate Pro for 50% off!</h2>
+                <p>
+                    Spend less to grow more with 50% off for 12 months, even if you change to another plan. Cancel or
+                    downgrade anytime.
+                </p>
+                <ul class="plans-features">
+                    <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> AI-powered features</li>
+                    <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Advanced segmentation</li>
+                    <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Enhanced automations</li>
+                    <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Custom email templates</li>
+                    <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Popup forms & onboarding</li>
+                </ul>
+                <a class="see-all-plans" href="#">See all plans &rarr;</a>
+            </div>
+            <div class="plan-card">
+                <div class="plan-card-inner">
+                    <div class="plan-name">Pro</div>
+                    <div class="plan-emails">Up to 10,000 emails/month</div>
+                    <div class="plan-contacts">
+                        <label for="contacts">Contacts</label>
+                        <select id="contacts">
+                            <option>500</option>
+                            <option>1,000</option>
+                            <option>5,000</option>
+                        </select>
+                    </div>
+                    <div class="plan-pricing">
+                        <span class="plan-old">$30</span>
+                        <span class="plan-new">$15</span>
+                        <span class="plan-duration">/mo for 12 months</span>
+                    </div>
+                    <button class="plan-buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Footer -->
+    <footer class="footer-section">
+        <div class="footer-links-wrap">
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="#">Why Slerate?</a>
+                <a href="#">Product Updates</a>
+                <a href="#">Sales Automation</a>
+                <a href="#">Website Builder</a>
+                <a href="#">Integrations</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="footer-col">
+                <h4>Integrations</h4>
+                <a href="#">Shopify</a>
+                <a href="#">Zapier</a>
+                <a href="#">WooCommerce</a>
+                <a href="#">API Access</a>
+                <a href="#">CRM</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Accessibility</a>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Support</a>
+                <a href="#">Docs</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+            <div class="footer-apps">
+                <img class="footer-logo" src="logos.png" alt="Slerate Logo" width="36">
+                <span class="footer-appname">Slerate Sales Boost</span>
+                <img class="appstore-img" src="appstores.png" alt="Download on App Store" height="90">
+                <img class="appstore-img" src="en_badge_web_generic.png" alt="Download on Play Store" height="70">
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><img
+                        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"
+                        height="28"></a>
+                <a href="#" aria-label="Twitter"><img
+                        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" height="28"></a>
+                <a href="#" aria-label="Instagram"><img
+                        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
+                        height="28"></a>
+                <a href="#" aria-label="Linkedin"><img
+                        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="Linkedin"
+                        height="28"></a>
+                <a href="#" aria-label="YouTube"><img
+                        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"
+                        height="28"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
