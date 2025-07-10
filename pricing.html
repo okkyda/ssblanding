@@ -5,78 +5,97 @@
     <meta charset="UTF-8">
     <title>Pricing - Slerate Sales Boost</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="img/logo.jpeg" width="60" height="60" alt="Logo">
-                Slerate Sales Boost
-            </div>
-            <div class="navbar-menu" id="navbarMenu">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <span class="dropbtn">Services</span>
-                    <div class="dropdown-content">
-                        <a href="#">Email Automation</a>
-                        <a href="#">Analytics</a>
-                        <a href="#">Personalisation</a>
-                        <a href="service.html">See All Services</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <span class="dropbtn">Integrations</span>
-                    <div class="dropdown-content">
-                        <a href="#">Shopify</a>
-                        <a href="#">WooCommerce</a>
-                        <a href="#">Zapier</a>
-                        <a href="intregration.html">See All Intregrations</a>
-                    </div>
-                </div>
-                <a href="pricing.html" class="active">Pricing</a>
-                <a href="#" class="login-btn">Log In</a>
-                <a href="#" class="register-btn">Register</a>
-            </div>
-            <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
-                <span></span><span></span><span></span>
-            </div>
+         <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="img/logo.jpeg" width="60" height="60" alt="Logo">
+            Slerate Sales Boost
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="service.html">Services</a>
+            <a href="intregration.html">Integrations</a>
+            <a href="pricing.html">Pricing</a>
+             <a href="login.html" class="login-btn">Log In</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+        <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar-menu" id="sidebarMenu" aria-label="Sidebar menu" tabindex="-1">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">&times;</button>
+        <nav class="sidebar-nav">
+            <a class="sidebar-link" href="index.html">Home</a>
+            <a class="sidebar-link" href="service.html">Services</a>
+            <a class="sidebar-link" href="intregration.html">Intregrations</a>
+            <a class="sidebar-link" href="pricing.html">Pricing</a>
+            <div class="sidebar-sep"></div>
+            <button class="sidebar-btn login">Log In</button>
+            <button class="sidebar-btn signup">Sign Up</button>
         </nav>
-    </header>
-    <main>
+        <div class="sidebar-footer">
+            <div class="sidebar-footer-logos">
+                <img src="img/logo.jpeg" alt="Logo" style="height:32px;margin-right:8px;">
+                <div class="sidebar-footer-note">Slerate Sales Boost</div>
+
+            </div>
+            <div class="sidebar-footer-socials">
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                        height="20" alt="fb"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" height="20"
+                        alt="x"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                        height="20" alt="ig"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        height="20" alt="in"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                        height="20" alt="yt"></a>
+            </div>
+            <div class="sidebar-footer-note">&copy; 2025 Slerate Sales Boost</div>
+        </div>
+    </aside>
         <section class="plans-section">
             <div class="plans-content">
                 <div class="plans-text">
-                    <h2>Try Slerate Pro for 50% off!</h2>
+                    <h2>Try Slerate Standart Plan for 50% off!</h2>
                     <p>
                         Spend less to grow more with 50% off for 12 months, even if you change to another plan. Cancel
                         or
                         downgrade anytime.
                     </p>
                     <ul class="plans-features">
-                        <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> AI-powered features</li>
-                        <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Advanced segmentation</li>
-                        <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Enhanced automations</li>
-                        <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Custom email templates</li>
-                        <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Popup forms & onboarding</li>
+                        <li><i data-feather="check-circle"></i> AI-powered features</li>
+                        <li><i data-feather="check-circle"></i> Advanced segmentation</li>
+                        <li><i data-feather="check-circle"></i> Enhanced automations</li>
+                        <li><i data-feather="check-circle"></i> Custom email templates</li>
+                        <li><i data-feather="check-circle"></i> Popup forms & onboarding</li>
                     </ul>
                     <a class="see-all-plans" href="#pricings">See all plans &rarr;</a>
                 </div>
                 <div class="plan-card">
                     <div class="plan-card-inner">
-                        <div class="plan-name">Pro</div>
-                        <div class="plan-emails">Up to 10,000 emails/month</div>
+                        <div class="plan-name">Standart Plan</div>
+                        <div class="plan-emails">Up to 10.000 emails/month</div>
                         <div class="plan-contacts">
                             <label for="contacts">Contacts</label>
                             <select id="contacts">
                                 <option>500</option>
-                                <option>1,000</option>
-                                <option>5,000</option>
+                                <option>1.000</option>
+                                <option>5.000</option>
                             </select>
                         </div>
                         <div class="plan-pricing">
-                            <span class="plan-old">$30</span>
-                            <span class="plan-new">$15</span>
+                            <span class="plan-old">Rp 1.500.000</span>
+                            <span class="plan-new">Rp 750.000</span>
                             <span class="plan-duration">/mo for 12 months</span>
                         </div>
                         <button class="plan-buy">Buy Now</button>
@@ -89,37 +108,31 @@
             <div class="achievement-container">
                 <div class="plans-content">
                     <div class="plans-text">
-                        <h2>Try Slerate Pro for 50% off!</h2>
+                        <h2>Try Slerate Premium Plan for 50% off!</h2>
                         <p>
-                            Spend less to grow more with 50% off for 12 months, even if you change to another plan.
+                            Spend less to grow more with 50% off for 12 months with more powerfull plan, even if you
+                            change to another plan.
                             Cancel
                             or
                             downgrade anytime.
                         </p>
-                        <ul class="plans-features">
-                            <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> AI-powered features</li>
-                            <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Advanced segmentation</li>
-                            <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Enhanced automations</li>
-                            <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Custom email templates</li>
-                            <li><img src="file-3tnrZyQyrWgi6LhkmErhM6" alt="check"> Popup forms & onboarding</li>
-                        </ul>
-                        <a class="see-all-plans" href="#pricings">See all plans &rarr;</a>
+
                     </div>
                     <div class="plan-card">
                         <div class="plan-card-inner">
-                            <div class="plan-name">Pro</div>
-                            <div class="plan-emails">Up to 10,000 emails/month</div>
+                            <div class="plan-name">Premium Plan</div>
+                            <div class="plan-emails">Up to 30.000 emails/month</div>
                             <div class="plan-contacts">
                                 <label for="contacts">Contacts</label>
                                 <select id="contacts">
-                                    <option>500</option>
-                                    <option>1,000</option>
-                                    <option>5,000</option>
+                                    <option>5000</option>
+                                    <option>10.000</option>
+                                    <option>15.000</option>
                                 </select>
                             </div>
                             <div class="plan-pricing">
-                                <span class="plan-old">$30</span>
-                                <span class="plan-new">$15</span>
+                                <span class="plan-old">Rp 5.000.000</span>
+                                <span class="plan-new">Rp 2.500.000</span>
                                 <span class="plan-duration">/mo for 12 months</span>
                             </div>
                             <button class="plan-buy">Buy Now</button>
@@ -136,10 +149,10 @@
 
 
                 <div class="pricing-cardo">
-                    <h2>Standard</h2>
-                    <div class="price">$10 <span>/mo</span></div>
+                    <h2>Standard Plan</h2>
+                    <div class="price">Rp 750.000 <span>/mo</span></div>
                     <ul>
-                        <li>Up to 6,000 emails/mo</li>
+                        <li>Up to 10.000 emails/mo</li>
                         <li>500 contacts</li>
                         <li>Generative AI features</li>
                         <!-- ... -->
@@ -148,24 +161,25 @@
                 </div>
 
                 <div class="pricing-card">
-                    <h2>Standard</h2>
-                    <div class="price">$10 <span>/mo</span></div>
+                    <h2>Premium</h2>
+                    <div class="price">Rp 2.500.000 <span>/mo</span></div>
                     <ul>
-                        <li>Up to 6,000 emails/mo</li>
-                        <li>500 contacts</li>
+                        <li>Up to 30.000 emails/mo</li>
+                        <li>5000 contacts</li>
                         <li>Generative AI features</li>
+                        <li>Customer Support Priority</li>
                         <!-- ... -->
                     </ul>
                     <button class="btn-buy">Buy Now</button>
                 </div>
 
                 <div class="pricing-cardo">
-                    <h2>Standard</h2>
-                    <div class="price">$10 <span>/mo</span></div>
+                    <h2>Essentials</h2>
+                    <div class="price">Rp 500.000 <span>/mo</span></div>
                     <ul>
-                        <li>Up to 6,000 emails/mo</li>
+                        <li>Up to 10.000 emails/mo</li>
                         <li>500 contacts</li>
-                        <li>Generative AI features</li>
+
                         <!-- ... -->
                     </ul>
                     <button class="btn-buy">Buy Now</button>
@@ -196,10 +210,10 @@
                             <td colspan="4" class="compare-section-head">Key Plan Features</td>
                         </tr>
                         <tr>
-                            <td>$350/mo for 10,000 contacts</td>
-                            <td>$20/mo for 500 contacts</td>
-                            <td>$13/mo for 500 contacts</td>
-                            <td>$0/mo; limit of 500 contacts</td>
+                            <td>Rp 2.500k/mo for 30.000 contacts</td>
+                            <td>Rp 750k/mo for 10.000 contacts</td>
+                            <td>Rp 500k/mo for 5000 contacts</td>
+                            <td>Rp 0/mo limit of 1000 contacts</td>
                         </tr>
                         <tr>
                             <td>Phone & Priority Support</td>
@@ -274,10 +288,7 @@
                             <td>✔</td>
                         </tr>
                         <tr>
-                            <td>✔</td>
-                            <td>✔</td>
-                            <td>✔</td>
-                            <td>✕</td>
+                            <td colspan="4" class="compare-section-head">Form and Landing Page</td>
                         </tr>
                         <tr>
                             <td>✔</td>
@@ -286,16 +297,34 @@
                             <td>✕</td>
                         </tr>
                         <tr>
+                            <td colspan="4" class="compare-section-head">Remove Slerate Sales Boost Branding</td>
+                        </tr>
+                        <tr>
+                            <td>✔</td>
                             <td>✔</td>
                             <td>✔</td>
                             <td>✕</td>
-                            <td>✕</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="compare-section-head">A/B Testing</td>
                         </tr>
                         <tr>
                             <td>✔</td>
                             <td>✔</td>
                             <td>✕</td>
                             <td>✕</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="compare-section-head">Dynamic Content</td>
+                        </tr>
+                        <tr>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✕</td>
+                            <td>✕</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="compare-section-head">Advance Segmentation</td>
                         </tr>
                         <tr>
                             <td>✔</td>
@@ -373,7 +402,10 @@
             </div>
         </div>
     </footer>
-    <script src="pricing.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>

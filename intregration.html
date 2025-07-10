@@ -1,119 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Integrations - Slerate Sales Boost</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
     <header>
- <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="img/logo.jpeg" width="60" height="60" alt="Logo">
-            Slerate Sales Boost
-        </div>
-        <div class="navbar-menu" id="navbarMenu">
-             <a href="index.html">Home</a>
-            <div class="dropdown">
-                <span class="dropbtn">Services</span>
-                <div class="dropdown-content">
-                    <a href="#">Email Automation</a>
-                    <a href="#">Analytics</a>
-                    <a href="#">Personalisation</a>
-                    <a href="service.html">See All Services</a>
-                </div>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="img/logo.jpeg" width="60" height="60" alt="Logo">
+                Slerate Sales Boost
             </div>
-            <div class="dropdown">
-                <span class="dropbtn">Integrations</span>
-                <div class="dropdown-content">
-                    <a href="#">Shopify</a>
-                    <a href="#">WooCommerce</a>
-                    <a href="#">Zapier</a>
-                    <a href="intregration.html">See All Intregrations</a>
-                </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="intregration.html" class="active">Integrations</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="login.html" class="login-btn">Log In</a>
+            <a href="register.html" class="register-btn">Register</a>
             </div>
-            <a href="pricing.html">Pricing</a>
-            <a href="#" class="login-btn">Log In</a>
-            <a href="#" class="register-btn">Register</a>
-        </div>
-        <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+            <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
     </header>
     <main>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <aside class="sidebar-menu" id="sidebarMenu" aria-label="Sidebar menu" tabindex="-1">
+            <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">&times;</button>
+            <nav class="sidebar-nav">
+                <a class="sidebar-link" href="index.html">Home</a>
+                <a class="sidebar-link" href="service.html">Services</a>
+                <a class="sidebar-link" href="intregration.html">Intregrations</a>
+                <a class="sidebar-link" href="pricing.html">Pricing</a>
+                <div class="sidebar-sep"></div>
+                <a href="/login.html" class="sidebar-btn login">Log In</a>
+                <a href="/register.html" class="sidebar-btn signup">Sign Up</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="sidebar-footer-logos">
+                    <img src="img/logo.jpeg" alt="Logo" style="height:32px;margin-right:8px;">
+                    <div class="sidebar-footer-note">Slerate Sales Boost</div>
+
+                </div>
+                <div class="sidebar-footer-socials">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                            height="20" alt="fb"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" height="20"
+                            alt="x"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                            height="20" alt="ig"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                            height="20" alt="in"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                            height="20" alt="yt"></a>
+                </div>
+                <div class="sidebar-footer-note">&copy; 2025 Slerate Sales Boost</div>
+            </div>
+        </aside>
         <section class="integrations-section">
             <h1>Integrations</h1>
             <div class="integrations-grid">
                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                     <div class="foot-note">Slerate</div>
+                    <img src="https://avatars.githubusercontent.com/u/8085?s=280&v=4" alt="Shopify">
+                    <div class="foot-note"></div>
                 </div>
 
                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
-                </div>
-                <!-- ... -->
-
-                <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                    <img src="https://play-lh.googleusercontent.com/aPsA6vS25mrocOJqZhTZyxm7sntS_IZuHh4oLBI6v-70A_mLV0Fe0spqSDTbK_Fy8As"
+                        alt="WooCommerce">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
 
                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                    <img src=https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ
+                        alt="Canva">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
 
                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVwOzVey6XcMevohRDman3xgDFw91v8qZfw&s"
+                        alt="Zapier">
+                    <div class="foot-note"></div>
+                </div>
+                <!-- ... -->
+
+                <div class="integration-logo">
+                    <img src="https://hooquest.com/wp-content/uploads/2019/01/wix-logo-300.png" alt="Wix">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                    <img src="https://yt3.googleusercontent.com/Qjx3u75c7XY3LwBRLybLVGYzodywnIkDaHJexdfnq6WvH0TMkK3ocAtPnAHaU2NNrCIS14Z4uw=s900-c-k-c0x00ffffff-no-rj"
+                        alt="SquareSpace">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
-                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                <div class="integration-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7S5OvKJXb6_CzohwNHtfDWb-Z_btF5raZ2t4vFRwsQtr6x61cFNGt2d0wyCXbiv4TWnQ&usqp=CAU alt="
+                        Square">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
-                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
-                </div>
-                <!-- ... --><div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                <div class="integration-logo">
+                    <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEVjWv////9hWP////2urPtRRv9bUf9ZT/9fVf9aUP/Oy/ddVP9gV//t7fj19f3PzvtVSv1pYfiOh/htZfhqYfyHgvjU0fd1b/mSjPlUSf75+vzIx/jp5/lwafns6vizsPulofm7uPje3PmgnPri4vnAvviZlPl/ePZkXP2Jgve4tPnDw/m7ufl9dfnY1vmmpPdMQf5DNfjCy6IFAAAD0UlEQVR4nO3Y63aiOgCGYQgacMA2KIpoLU4totjq9P5vbpOEeuhhd/banSXjep8fiCm0+ZojOM7aAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC3EJeuwJ8kAqn8+NK1+INEsvr54O3kpevxXaLQj85L/LFb++Ffpj7fzVfpcjYKzsturyihba7JeSPahOPrSKj6nut6kzdtOPYei9Xwr55MA9nryVDohLq5BjKIhBMEUVAfw9AZ+pmSkSOimtAXy+j8ZnNvi0k5qYqiWs0zYRMuynKUrEdlWQ5VuV9GaX02SoP5ZjQarLOy2lYj9Zox7E2q7dMqaPNMqyrPtfpJ1m9O3UGsj0VRd1rHDM5xN9fXLR7M1Xfz0NycLabmu9dRF47xObVzD+bHhCOTcKoPws6l3Y7N4tqPZz1Ys9mhYJZdOsknZOcY0B0eE27i1zPvkNA9Na2HpF+dFOxb2lHVjY1hWuLjhM55wtc+XfTE0Kvvc6e7G/ufaOV0IxJT4b2Sw9Wt1/TSzmgzSIY2zi5/Cs56aZHGNqrX87f680GprhmpnVY2okhNtQdKOJGfNDONXi0im3CVSemfJrz7JYTam59NuuZjrdcRz0S9dJqPCGHbY/uswvpLsx7Wk4iwCWNx2LXZXnqnYygzA1Vzfey/+L7/cq9/STt3PXYqrZvgJo8C513C4YcJ/R/6dDZxz61bOhCnhyllI/89oe6K9zph70mX3C7fJJy3MqETrcevs6NXdn8z4c8PE6btTOgINS/skuE+vtiE0TGh86aXmoT2EWRre+nNq2nczoT1pllINbEZs99rw8z07Dw1Df+SqUY7AwaVo+qQsjSBEpNw6Yso+KANTcJfUZTZBXHTNd17kdXJRCRbuVbUlOfdLudibRZvt2cS3oySwfyTudSdlandqtcrvplS3TzJlHjOp0k729AubWb3pde2wza82bW9G4dHRS9KmznK7vnauVg4/vSk0kt/1VS5ebZ4Pw4PpvV05OenJW1NeFLtrXKyXZNw80VCr9RPT+qp/QnD/N50Mc/tr+q5QvgzE9At7TjUi7jfPAHbmaYw5Y/NE7DaPNq73ftF8MWfupRQJZN9lS/TzNZQxYuqs0pCZxjHsR6G9banPosTaRO+xIt8kR5Whkglq06+nyQqvFSCr4lAShkeXi6JUJo3S0KzJUaTUNU/D0/fRJnrg3b20P9GHlf8KyWPzxZXyibsX3PC3Hssli19QvoWIpGq1/KX2//TVYcDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArsY/dqQ5wPYTIAEAAAAASUVORK5CYII
+                        alt="Stripe">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
-                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                <div class="integration-logo">
+                    <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAAdVBMVEUAoeD///////4Ant8Am94An98Amt77/f0YpOHb8foAouD2/P2h1vEApOG64PR4xOvk9Pu13vSHyu1rv+mc0/Dr9/w5ruTJ5/dlvOiQzu5Stufy+v7T7PgyqeKt2vK22/LE4/VGsuUAlNzZ7fgorON3wOp+x+tIFEzzAAARD0lEQVR4nO2d14KqOhSGwRRHKWKhCMLo0fH9H/GkUiQBpCgz7v9qbwdI+EhWVtqKYQ6Udz2F4fl8Dk8rf+iz3i2j/60rd3cxMCyEYbA5nKzxMvdq9YThZzGAECBkVIQAgPi2C8fN48vUB0ZiBxg+YKgQgevdavScvkDPwwgjUiS0JHIejr2cILvT6lkYWdpQJio8IDgmk2R5Oj0HI3M6ohAGZPcMDv8abu3D8WBn7nX1Fo7PwDh3LRW5ALI7PdknDROpWqT+UdGWCayjY/jqhqk7DD9+FgUtHTBtbVpOx1TVMBE4ILZf6rt0hpGBNqupwYE3TY/1dg4BoWcJ4+3rDHFHGFbUo1gIgVTbzp7jBhKSx/r4quLRDcbJ6VcsBA2othzbbuaY1JfNa3B0gpH1LxZccF9/6Cno/lTSLr3CmHaBsYPDUNC3uTy8TLJ/DjBYbyd5/4o6wNgMZ0Fe5lbxHLbo2XqH4MWbCoJUO4xoDBaEhlPQWPYyxwhkU5IwO8AYiQV5l1TSWKU9W2m4n7aZbYMxSh3hAjduN9yeHgt7xKTNSguM43gsqBWljzzgAU0TcqY0HM0wsjFZEBr7wU0TMiYcKWmEcRqXBfE37MFFDaHrW2AkzkBfq67+5iLXhDSaYETDcz6F0HoqK9oAYzt2JRlLKJ3IN9fDSIzRK8lYAtGrYeznWUmY4EGd56VlJUliWT19My2M0VuSUQUfjKh1zY77OEidNen0rNdpEG+y8OlxVC2MYLaVhArcipz67j1AGAKAqAza3hDRodQ0Ojw1jqqDMVvrKQR3PJ/XY0CHkdUX0XFUI846lxAdjHTWBYMIEr/cO6a4zXNBCILY7WZENDDmXjDIS8arqHUAVV4LnV2XPo0GRjDjpkQItU5yli8GMGrv1KhhzLsp6SeCo610qGHM2cfoLwBbhpWVMJK5W8++Amv3aRjzN599hXDU0NAqYcR/tWQYdC5cXzhUMP5sLWFqmPxVwXD/bC3hAqlmQEQFY/Mn25KSEFCvk1DBmL0rPlgIKycrFTD8v14wqLBqdk4BI/zjJoMLK5ZJKGAcPqFkKGkoYPxNX7yuOg0FjF/QYx1H+NwO4+vPNyZCCHptMP62/1kRcpYtMLxPqSVEIG6Bcf2IllUIHv/BKITDfzByofU/GIXApgmG91kwDHxqgvFBrQkVujXA+IhOa1kw08Ow3p25VwsZSy2M5fpzXFCufLXHJ/dNpBBaamH85YkCteR+GAWM46dZUNJh08IYeVnwbxA862D8xSn4FqFYB+ODBjRyYV8DYy7jfo87XacUOOhgDLegbOPyoCcgiNeOAYfuFOycXKqDMdhogEOWZfaQB8DI9ZdLKwmjF9HAngaGNbSAwgV9TH/njW0LXlC9bN6X1RPl+oyhnwMu6Yv0hoEuS45isbBe1TdAFx2M88B6MgwGQgllwXLyutURUAfDHPg9hsEgzjFlEW7i6HB5WcMGTzoYu2F5GAQDGcxY7DCgC8AH5eMZUaOhhjFwtGsQDLAhBcM84UE5eF4o0sGw3wgDhuYLW5FcyFDDWAVasyV3MTT/qoShbK8Vz8MWrSW1m7uSVeawy904Ua7P0Ll9CIKvNE3XlSBdCIpfS95iDQaA0Phag4eF7+RWh98piwHdJeJQ8+nR/SPyapLu+muNKnezuDw89fLtEJAnftEn5teq066LWNAajKVu8zuCF9enDV7iZbGwbHT7QnZlnRzLc/OgPA8wAIhcL7EsP9yUg5LAW+bR5cuW70aI3YrSzLZdCsM/2LadsSfQu/2EeKOn3VfOe73dbt0jhLHr+Z57cHg6aBP6S5bD804sTANgT9Je0rTXzTUPujUYvm7TPkJnU7pC5LI7y/yabWzJfw1FelUYMPKlP2kuik2+dHgpv9M60NYcsB014ieTr7SD++JuMxPlHX3RP5+Mk8k9EroBF8G7Vc4LbEhbJXB8hHHSbVmk264XJbHeHHQrvy1Mn28LrsCA2/JF+VLsh3tZ5quXLnzExvErCfAPTmCQ/618s7iXLmcsX8nWHz2k3ThsBe4PMEJtL5HnndSiJf92JnWHSHMkPyLnL79HCYZ4afJ3cQmnQb5D8TzZfMBVpWCQDqNgUSRgMdwcRn4lfXF8Kq6ktZ2WIU3aGhhRFYaeBQpY3u0b+dfepjuimB8AScH0snscXKKDxRmhKgxS8tkXvQdOsONuNhtwBvQS8xysQRod6AQfzSawv78zeuvym8jdI8BpL+0oiDesaPIudQ7DXIbf2xXIS5Dp7oMgiI5XWghKaafltDWvGFdgrPQGl/hnlAXm+wJxHHIfFdhugGnAMUAsoJeXxAIGcthLh2xrIUD0fcwVFmXKDImXSXfV4duWl2Bi+WVjAmnrhBJWXRxI7+bvy4qBhEEqK71QfqxFEmCeEvvNWdTT1hcN8ogSDL+hNWYFjn92dqNszUCxNwrE9JJrFQavDbLvib5Y9gLEfzfv4PF5gpLoKZJqLGskFa8JdGJcwDD3MhYHPLMrK9affcCFJawgSmXaOhhpCYbVFBOBJdYSZgWwNhFUYGBWXHIzzgwa7flwGFnd5+Z/EEtR2duT8iOze5FsOIzCZ0cs7YfQJ9ivpu2KtHUwnBKMuKkZFlVStV+QejosOuF/9AqrAoPQrnwwsKcZIv1yUZ2Ptedx6nxABa2XebvA/8heb5fD2FSeuzArDxNmrkh7I9LWwVgXMA7NX33Py+XqblTzj+DtGHq+76+uNs36smJAeXPj873IVIHJbSCnRIzb8SG0Hy9KvAFlFW9RWtfPPy55HwEj/wuwTWlbH7JcpA0u9WsqMIqS4bX0EoEn2zziypUc7+BUtIaLGgxuMvL2TlxK0+KVnP5ptStH1mTlPQGl10lKmThIltxmFEWGde6q3Ut12r72PdEth9EWLQoFciiOXLxNpee0yX0+oQcY2cOfFzJDyPBK3mIsvxcIcissm8bSehH+A2HJYSzzF4Onuj2A2rTbYDRXEpaRr1XJ2T2wZ7JqWMCvw1BmiLWtxNS4peedRV3hFVt4ivzb+kXWeHqJhGEVMFaLcuPEf3NVaetrQO5nJB2GGhHe51WCNH6Y1TL27yy6rR3nEtVtBodhrarixRnBwC2e53EavPKLT6wpGb4ChqpkfOvTVgn8CBjdNhIA7NxD6ReTlMWrMpeIuk51GLypX/2HKyp5F3u6ZZ89j5t5XvmFn9hmM0owwlKDXL54cdWkrXi7HYfRZj1z0WZ0f5WWCDLLn4cpUsHYlOyh+nkw5qbUZM4RH9mRPlpLa1LA4AWqumuIp919hRp5BoPxVNglgLmP4AhPJ8+BAoZo6xsDkyDM3zlCsuLJFxD+dMnP4C4cqMPYVLPCfrs8oGwRKV0Uht7ClrJc4oWZuQoAh5HfzGCY1Y4aoJ0LpXkueRd4K31zVhYKXwBfWUmQKQCBtg4DIfaXanQ4aOnSVgp6DEaHiQEU2EUvhOfxhgBLLa1UkwcYYg6kNK8vO0C2UXxwanvMHyAsZOEviL6JLFg4FC1rDQY3GuTK/M3zoRBV2kphNiC87FBJyEtZGwzZ08CNNfKQRgGSXU+a0H9WHYZocBZ71pskXju+sTpJFykfxbgk4FBvcgCi8LIRsph5MlivFR9zH7wGg3dbyB8xj1yOidmRXdvHtNWia2ONbmEAAOkVmEkWOcQe75eLSgfD26fk11u0W9Rh0D0MvOm0N1H0c7eJs8KGXciXNBcuvRPGvvzgsgIWg7ncFljHwLj9sD4rd8hqMHhVo+kcNj8/98ynfaRS2nH0syNpL/RThaQUUhgdVvdxu868KzHOyMcnvZrT9Qgj933ya+inlR4KHZIS97GPBnl/q/SObikF+q9lWox0lWHIvMhLmT3GqrQ1Ih1qAiPpYj6D3Hnm4iYefVmPXl4NRnngl19B7eM6fPiR2TnEKmBlJX/VjzQtbgEUMBA4Va5kQyJ0K28tbbXoQiajW7AMxEJ/y0ealuhMIEc6YYK/nzEYlfUZMM6HNtnvzD7C+Fq+ccfde9bDr64BwHsr7wma28ro+KLyGRE+WqVkePusTFv5gnT1o9F1GyuA8dZjo7f+6Z5PCNMe/NmziJLV+bB3oBjttW37UCJ5sU90QsPyTtkPklMugX1lUV+s60FMMXAP82GTMUB3Fnksudq3vHuLdsfj8bHMAxhtVwnJi3/N9qLpVqater07g9F5RpTOXhmOg0AlDBJ1IsXZE/kUWG1NFwAswBo7pwKVf0RpiorJLu5V15bK0AsQqs6JqVeNoSIvzWnXxFaCGp1dcZ7a2EvwqnO0rDS/ZSE/oGXUGLpKZ0TxNqthAHs6AXZ+gDGjleLc5XpLXALINjEaP+8olEoB5nwwT/TVEnsYjcscYPCTf65moycwZfp8+40xh5gyYGOdv0M+P/mW3S6QB+8ynDek/Si8yr35t+zvAOL4lTnAEJMoi9pg1auEvfnAACLqK+mdvmrhfDV9eS7PHGAYKDpst9tj/PQJMOMojykyCxiGcJbfY8uL3fDzgPFOIZD8gyFVOtfs42GU4gL8gwFLcZaNd3QFZqRK0B2jccHOnxcKzDKM+yfDQKAStswYuJvidwtX4wkbnxHwUi15+kMOw3pqDPRPCTyeFWp8QJBcjfgZd1UYAzfn/VqBoHbOh/EhUXJrAoojtwzT/MiSAQLFGQ7G54TJLQvGdRQMxgfWE9WZ0xyGOf4Ri/MW0h3DRmF8SGxtKWCog/NzGNZH1RMYa084YetAP8jVQNVAuQoYH1M0EAyaDonia8dHPcp5vgJG82HqYovFJzQoABxbDtoTMM5/ve+KCIrWMynlTqSZHmE8kgA02lEUMAaHo5qvEMCB8qAbLYxi9+ifEgIQB3bXA7KLfa2/uUUBpWWXUoitp9+7T5znW9r+/XvNBgiyTYAw20DPRf592x/PT56ZXg4McPutNPjKH9M7nTOirXsOV70OSy/DsH7pcCjQHpk3AIaZfP3GsiEjAI8Mg5SNX0ijdNjAqDDMpT5E11yFNSM1w2GY5v6X+RuaEbxxYJj2W1bc9RUIFC81HgzTS39PVUFptxPfe8NoCGg3NwHnCf+yJwzTi/FvwKGaFRsfBum3XeaPA8Zj1pEGGDTcCW4LlPhe4fu4KJpgkMqyc+bLA4Hm8cyxYRCF9xQ+do9pOLR3IcjVPMw9DQwi391cHLZTCLANQ3gd7F8VJ14nABTn8L4CBtUyOZ232eGQueEqIVary5bxXuo0+AhYjNC3wahpoqKB0nWriwNgtGrPYC/1hDFRJGzoLu1bk9GmMYumQtEbxjRnoPCDNcLNF64PafJNKRd7VJfzQX1hTDKYLs+6W56OwZrFGRVh+ejgLkj32TSmIldfGM0RlvqJFwwhy3OPcZCmjuOkQXTPzlMWCaHeMCawGrXTuImWljWyz92g3jDGn1lAykVnr1R/GPq4bD31eDD569UfhmmPOwakW3X2Qg2A0Rxo91mhMcfvemoIjGTMmfv3V5JhMMZ0NlQtycs1CIYIGDuCmtbgvU7DYJj3cYwojMZ5m4EaCMPUnYbylOrbYN6joTDGaFJGnQgaosEwhtNQbAl6k4bDMONhNUW99eMtGgGGeR/SpuCxVpqMoDFgmNve05EITjKy21OjwDBXTj/DAdajLTQZQ+PAMItjV54pFjiai+nkGguG6bYcU6YqFm77Y1+q0WCY5g4+gwM8bkSfgUaEYfr7hqMAHlDgaOLB3T4aE4ZpevsuM9UIwM10kx8DNC4M00wOTvORj4SEc3jBSHcfjQ2D6LQjPNT1hQYC3ug2Ur5fE8AgOh0vGIrgxlIQYhAfrpOkN5KmgUHlhVu7LDecwcBes/4H6x/pSFQfUuEAAAAASUVORK5CYII
+                        alt="Salesforce">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
-                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                <div class="integration-logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC"
+                        alt="Linkedin">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
-                 <div class="integration-logo">
-                    <img src="img/logos.png" alt="Shopify">
-                    <div class="foot-note">Slerate</div>
+                <div class="integration-logo">
+                    <img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9"
+                        alt="Facebook">
+                    <div class="foot-note"></div>
+                </div>
+                <!-- ... -->
+                <div class="integration-logo">
+                    <img src=https://s.w.org/style/images/about/WordPress-logotype-wmark.png alt="Wordpress">
+                    <div class="foot-note"></div>
                 </div>
                 <!-- ... -->
             </div>
 
-           
+
         </section>
     </main>
 
-     <footer class="footer-section">
+    <footer class="footer-section">
         <div class="footer-links-wrap">
             <div class="footer-col">
                 <h4>Products</h4>
@@ -173,6 +205,10 @@
             </div>
         </div>
     </footer>
-    <script src="integrations.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>

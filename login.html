@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Slerate Sales Boost</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="img/logo.jpeg" width="60" height="60" alt="Logo">
+            Slerate Sales Boost
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="intregration.html">Integrations</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="hamburger" id="hamburgerBtn" aria-label="Menu" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar-menu" id="sidebarMenu" aria-label="Sidebar menu" tabindex="-1">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">&times;</button>
+        <nav class="sidebar-nav">
+            <a class="sidebar-link" href="service.html">Services</a>
+            <a class="sidebar-link" href="intregration.html">Intregrations</a>
+            <a class="sidebar-link" href="pricing.html">Pricing</a>
+            <div class="sidebar-sep"></div>
+            <a href="/login.html" class="sidebar-btn login">Log In</a>
+            <a href="/register.html" class="sidebar-btn signup">Sign Up</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-footer-logos">
+                <img src="img/logo.jpeg" alt="Logo" style="height:32px;margin-right:8px;">
+                <div class="sidebar-footer-note">Slerate Sales Boost</div>
+
+            </div>
+            <div class="sidebar-footer-socials">
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                        height="20" alt="fb"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" height="20"
+                        alt="x"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                        height="20" alt="ig"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        height="20" alt="in"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                        height="20" alt="yt"></a>
+            </div>
+            <div class="sidebar-footer-note">&copy; 2025 Slerate Sales Boost</div>
+        </div>
+    </aside>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <img src="img/logo.jpeg" alt="Slerate Logo" />
+                <span>Slerate Sales Boost</span>
+            </div>
+            <h2>Login</h2>
+            <form class="auth-form">
+                <label>Email</label>
+                <input type="email" placeholder="you@email.com" required>
+                <label>Password</label>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+            <div class="auth-footer">
+                Belum punya akun? <a href="register.html">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
